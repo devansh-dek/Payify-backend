@@ -6,7 +6,7 @@ const connect = require('./config/database.js')
 const apiRoutes = require('./routes/index.js')
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use('api/', apiRoutes);
+app.use('/api', apiRoutes);
 
 const setUpStartServer = () => {
     app.listen(PORT, async () => {
