@@ -9,11 +9,11 @@ const walletSchema = new mongoose.Schema({
     publicKey: {
         type: String,
         required: true,
-        unique: true
+        unique: false
     },
     privateKey: {
         type: String,
-        required: true
+        required: false
     },
     createdAt: {
         type: Date,
